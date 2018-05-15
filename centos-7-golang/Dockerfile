@@ -7,7 +7,7 @@ RUN mkdir -p /go && chmod -R 777 /go
 RUN rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO && \
 	curl -s https://mirror.go-repo.io/centos/go-repo.repo -o /etc/yum.repos.d/go-repo.repo
 
-RUN yum -y install git golang make rpm-build && yum clean all
+RUN yum -y install git golang make rpm-build sendemail && yum clean all
 
 ENV GOPATH /go
 
