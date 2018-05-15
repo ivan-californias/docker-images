@@ -1,3 +1,4 @@
+all: build push
 
 build:
 	docker build -t ivancalifornias/centos-7-golang .
