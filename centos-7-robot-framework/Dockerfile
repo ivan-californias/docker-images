@@ -2,7 +2,7 @@ FROM centos:7
 
 RUN yum -y install epel-release && yum -y update && yum clean all
 
-RUN yum -y install git make rpm-build sendemail wget sudo vim xorg-x11-server-Xvfb && yum clean all
+RUN yum -y install git make rpm-build sendemail wget sudo vim xorg-x11-server-Xvfb xorg-x11-font* && yum clean all
 
 RUN yum -y install python python2-pip && yum clean all
 
