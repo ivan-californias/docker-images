@@ -1,3 +1,3 @@
-FROM alpine:3.10
+FROM docker:dind
 
-RUN apk update && apk add bash make docker
+RUN apk update && apk add bash make
